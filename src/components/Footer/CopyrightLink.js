@@ -10,7 +10,7 @@ export default function CopyrightLink() {
 			href='https://github.com/bbntpl'
 			target='_blank'
 		>
-			{`©Themerc ${currentYear}`}
+			{`©IG WE Testing ${currentYear}`}
 		</FooterLink>
 	)
 }
