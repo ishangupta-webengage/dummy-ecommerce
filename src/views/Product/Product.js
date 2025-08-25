@@ -1,3 +1,5 @@
+/* global webengage */
+
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Segment, Grid, Loader } from 'semantic-ui-react';
