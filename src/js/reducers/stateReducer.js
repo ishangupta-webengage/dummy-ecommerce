@@ -77,6 +77,13 @@ const addItemToCart = (state, { targetId, targetQty }) => {
 			id,
 		} = getItemFromProducts(state, { targetId });
 		const cartItemObj = { thumbnail, title, price, discountPercentage, stock, id };
+
+		webengage.track("Add To Cart", {
+		  "Product Name": cartItemObj.title,
+		  "Product ID": cartItemObj.id,
+		  "Price": cartItemObj.price,
+		});
+		
 		return addObjItemToCart(state, { cartItemObj, targetQty });
 	}
 }
