@@ -49,6 +49,11 @@ export default function Product(props) {
 				return products.reduce((result, product) => {
 					if (id === product.id) {
 						result.push(product);
+						webengage.track('Product Viewed', {
+							'Product Name': product.title,
+							'Product ID': product.id,
+							'Product Price': product.price
+						}
 					}
 					return result
 				}, []);
