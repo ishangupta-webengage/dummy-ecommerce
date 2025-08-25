@@ -12,6 +12,7 @@
 		"semantic-ui-less": "^2.5.0",
 		"semantic-ui-react": "^2.1.4",
 		"styled-components": "^5.3.10"
+		"webengage": "^1.0.0"
 	},
 	"scripts": {
 		"start": "craco start",
