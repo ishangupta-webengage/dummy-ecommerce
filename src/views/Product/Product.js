@@ -55,8 +55,8 @@ export default function Product(props) {
 							'Product Name': product.title,
 							'Product ID': product.id,
 							'Product Price': product.price
-						}
-					},
+						});
+					}
 					return result
 				}, []);
 			}
