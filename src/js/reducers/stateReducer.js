@@ -1,3 +1,5 @@
+/* global webengage */
+
 const getItemFromProducts = (state, { targetId }) => {
 	const copiedArr = [...state.products];
 	return copiedArr.filter(item => targetId === item.id)[0];
@@ -78,10 +80,10 @@ const addItemToCart = (state, { targetId, targetQty }) => {
 		} = getItemFromProducts(state, { targetId });
 		const cartItemObj = { thumbnail, title, price, discountPercentage, stock, id };
 
-		webengage.track("Add To Cart", {
-		  "Product Name": cartItemObj.title,
-		  "Product ID": cartItemObj.id,
-		  "Price": cartItemObj.price,
+		webengage.track('Add To Cart', {
+		  'Product Name': cartItemObj.title,
+		  'Product ID': cartItemObj.id,
+		  'Price': cartItemObj.price,
 		});
 		
 		return addObjItemToCart(state, { cartItemObj, targetQty });
