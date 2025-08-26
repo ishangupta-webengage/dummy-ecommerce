@@ -28,6 +28,12 @@ color: gray;
 font-weight: 300;
 `
 export default function Checkout({ totalCost, getTotalItems }) {
+
+	webengage.track("Checked Out", {
+		"Total Items" : getTotalItems(),
+		"Price"      : totalCost,
+	});
+	
 	return (
 		<StyledCheckout>
 			<Header>Estimated Costs</Header>
