@@ -27,7 +27,7 @@ const HeroTexts = () => (
 	<HeroTextsContainer>
 		<MainHeader>
 			Welcome to 
-			<strong>IG WE Testing</strong>
+			<strong> IG WE Testing</strong>
 		</MainHeader>
 		<SecondaryHeader>A platform built for Random<strong> DUMMY</strong> products</SecondaryHeader>
 	</HeroTextsContainer>
