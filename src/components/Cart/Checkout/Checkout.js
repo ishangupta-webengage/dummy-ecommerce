@@ -1,3 +1,5 @@
+/* global webengage */
+
 import { Button, Header, Segment } from 'semantic-ui-react';
 import styled from 'styled-components';
 
@@ -29,9 +31,9 @@ font-weight: 300;
 `
 export default function Checkout({ totalCost, getTotalItems }) {
 
-	webengage.track("Checked Out", {
-		"Total Items" : getTotalItems(),
-		"Price"      : totalCost,
+	webengage.track('Checked Out', {
+		'Total Items' : getTotalItems(),
+		'Price'      : totalCost,
 	});
 	
 	return (
