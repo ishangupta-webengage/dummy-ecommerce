@@ -54,7 +54,7 @@ export default function Product(props) {
 						webengage.track('Product Viewed', {
 							'Product Name': product.title,
 							'Product ID': product.id,
-							'Product Price': product.price
+							'Product Price': product.price,
 						});
 					}
 					return result
